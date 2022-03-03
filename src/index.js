@@ -109,7 +109,7 @@ class MovieTable extends React.Component {
 
   componentDidMount() {
     axios
-      .get("http://35.177.223.132:8080/Home/Films")
+      .get("http://13.40.129.5:8080/Home/Films")
       .then((response) => this.setState({ filmPackages: response.data }));
   }
 
@@ -174,7 +174,7 @@ class Post extends React.Component {
     console.log(data);
     axios
       .post(
-        "http://35.177.223.132:8080/Home/addReviews?film_id=" +
+        "http://13.40.129.5:8080/Home/addReviews?film_id=" +
           this.state.film_id +
           "&review=" +
           this.state.review +
@@ -239,7 +239,7 @@ class Delete extends React.Component {
 
     axios
       .delete(
-        `http://35.177.223.132:8080/Home/deleteReviews/${this.state.review_ID}`
+        `http://13.40.129.5:8080/Home/deleteReviews/${this.state.review_ID}`
       )
       .then((response) => {
         console.log(response);
@@ -302,7 +302,7 @@ class PutRequest extends React.Component {
 
     axios
       .put(
-        "http://35.177.223.132:8080/Home/updateReviews/" +
+        "http://13.40.129.5:8080/Home/updateReviews/" +
           this.state.review_id +
           "?review=" +
           this.state.review +
