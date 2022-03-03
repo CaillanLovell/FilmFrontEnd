@@ -183,7 +183,6 @@ class Post extends React.Component {
       )
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
-      window.location.reload(false);
   };
 
   render() {
