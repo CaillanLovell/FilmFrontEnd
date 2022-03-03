@@ -59,9 +59,8 @@ class MovieRow extends React.Component {
           ))}
        </p>
        </Collapsible>
-
+      
        <br></br>
-
 
       <Collapsible trigger="Click for Reviews">
       <p>
@@ -93,6 +92,7 @@ class MovieRow extends React.Component {
           <br />
         </div> */}
     </Collapsible>
+
     <hr></hr>
       </>
       
@@ -142,7 +142,7 @@ class Post extends React.Component {
   state = {
     film_id: "",
     review: "",
-    rating: " ",
+    rating: "",
   };
 
   onFilmIDChange = (e) => {
@@ -272,7 +272,7 @@ class PutRequest extends React.Component {
     this.state = {
       review_id: "",
       review: "",
-      rating: " ",
+      rating: "",
       updatedAt: null,
     };
   }
@@ -452,38 +452,34 @@ class FilterableMovieTable extends React.Component {
   render() {
     return (
       <div>
-          <h1 style={{backgroundColor: "lightblue"}}>Not Film Wiki!</h1>
+      <div className = "header">
+          <h1>Look at that Review!</h1>
+          </div>
           <p>Search for your Favourite films!</p>
-          <div class="float-parent-element">
-          <div class ="float-child-element">
           <div class = "float1">
           <SearchBar 
             filterText={this.state.filterText}
             onFilterTextChange={this.handleFilterTextChange}
           />
           </div>
-          </div>
-          <div class ="float-child-element">
           <div class ="float2">
           <Post/>
           </div>
-          </div>
-          <div class ="float-child-element">
           <div class = "float3">
           <Delete/>
           </div>
-          </div>
-          <div class ="float-child-element">
+          
           <div class = "float4">
           <PutRequest/>
           </div>
-          </div>
-          </div>
+          
         {/* <SiteNavigation /> */}
+        <div class = "filmtables">
           <MovieTable
            movies={this.props.movies} 
            filterText={this.state.filterText}
            />
+           </div>
       </div>
     );
   }

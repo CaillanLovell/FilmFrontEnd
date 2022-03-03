@@ -55,34 +55,48 @@ code {
   width: 50%; 
 } 
 .float-child-element { 
- 
+ height: -100px;
   width: 50%; 
 } 
 
-.float1{margin-left: 5%; 
+.float1{
   height: 100px; 
 } 
 
 .float2{ position: relative;
   margin: auto;
   top: -153px;
-  left: 240px;
+  left: 280px;
   height: 100px; 
 } 
 
 .float3{ position: relative;
   top: -236px;
-  left: 400px;
+  left: 160px;
   margin-left: 25%; 
   height: 100px; 
 } 
 
 .float4{ position: relative;
   top: -356px;
-  left: 640px;
+  left: 410px;
   margin-left: 25%; 
   height: 100px; 
 } 
+
+.filmtables{ position: relative;
+  top: -200px;
+} 
+
+.header{
+  position: relative;
+  background-image: url('/public/films.jpg');
+  height: 100px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 25px;
+  font-family: "Georgia", serif;
+}
 
 
 
