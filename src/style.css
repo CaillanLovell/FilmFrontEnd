@@ -39,7 +39,7 @@ code {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: darkblue; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -50,6 +50,39 @@ code {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+
+.float-parent-element { 
+  width: 50%; 
+} 
+.float-child-element { 
+ 
+  width: 50%; 
+} 
+
+.float1{margin-left: 5%; 
+  height: 100px; 
+} 
+
+.float2{ position: relative;
+  margin: auto;
+  top: -153px;
+  left: 240px;
+  height: 100px; 
+} 
+
+.float3{ position: relative;
+  top: -236px;
+  left: 400px;
+  margin-left: 25%; 
+  height: 100px; 
+} 
+
+.float4{ position: relative;
+  top: -356px;
+  left: 640px;
+  margin-left: 25%; 
+  height: 100px; 
+} 
 
 
 

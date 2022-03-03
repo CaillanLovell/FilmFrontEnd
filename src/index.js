@@ -343,7 +343,7 @@ class PutRequest extends React.Component {
           />
           <br></br>
           <input
-          placeholder="Rating"
+            placeholder= "Rating"
             value={this.state.rating}
             onChange={this.onRatingChange}
             required
@@ -454,13 +454,31 @@ class FilterableMovieTable extends React.Component {
       <div>
           <h1 style={{backgroundColor: "lightblue"}}>Not Film Wiki!</h1>
           <p>Search for your Favourite films!</p>
+          <div class="float-parent-element">
+          <div class ="float-child-element">
+          <div class = "float1">
           <SearchBar 
             filterText={this.state.filterText}
             onFilterTextChange={this.handleFilterTextChange}
           />
+          </div>
+          </div>
+          <div class ="float-child-element">
+          <div class ="float2">
           <Post/>
+          </div>
+          </div>
+          <div class ="float-child-element">
+          <div class = "float3">
           <Delete/>
+          </div>
+          </div>
+          <div class ="float-child-element">
+          <div class = "float4">
           <PutRequest/>
+          </div>
+          </div>
+          </div>
         {/* <SiteNavigation /> */}
           <MovieTable
            movies={this.props.movies} 
