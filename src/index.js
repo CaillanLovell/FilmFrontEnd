@@ -183,6 +183,33 @@ class Post extends React.Component {
       )
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
+      function delay(delayInms) {
+
+        return new Promise((resolve) => {
+  
+          setTimeout(() => {
+  
+            resolve(2);
+  
+          }, delayInms);
+  
+        });
+  
+      }
+  
+  
+  
+      async function sample() {
+  
+        console.log("waiting...");
+  
+        let delayres = await delay(100);
+  
+        window.location.reload(false);
+  
+      }
+  
+      sample();
   };
 
   render() {
